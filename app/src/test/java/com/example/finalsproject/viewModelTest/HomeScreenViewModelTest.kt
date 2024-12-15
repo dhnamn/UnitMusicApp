@@ -83,7 +83,7 @@ class HomeScreenViewModelTest {
         }.`when`(songsRepo).getTopSongs(any(), any(), any())
 
         viewModel.onClickRetryGetTopSongs()
-        Mockito.timeout(1000L)
+//        Mockito.timeout(1000L)
 //        Assert.assertTrue(viewModel.state.value.topSongs is FetchStatus.Ready)
     }
 
@@ -98,7 +98,7 @@ class HomeScreenViewModelTest {
         }.`when`(playlistsRepo).getRandomPlaylists(any(), any(), any())
 
         viewModel.onClickRetryGetPlaylists()
-        Mockito.timeout(1000)
+//        Mockito.timeout(1000)
 //        Assert.assertTrue(viewModel.state.value.playlists is FetchStatus.Ready)
     }
 
@@ -113,7 +113,7 @@ class HomeScreenViewModelTest {
         }.`when`(songsRepo).getRandomSongs(any(), any(), any())
 
         viewModel.onClickRetryGetRandomSongs()
-        Mockito.timeout(1000)
+//        Mockito.timeout(1000)
 //        Assert.assertTrue(viewModel.state.value.exploreSongs is FetchStatus.Ready)
     }
 }
